@@ -189,7 +189,8 @@ header{
 
   /* Cards! */
   .card {
-    /*Your  code here again.*/
+    display: flex;
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -199,11 +200,14 @@ header{
 
   /* Navbar */
   header{
-    /*Your code here again.*/  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
 
   .nav_links{
-    /*Your code here again.*/  
+    display: flex;
+    flex-flow: row nowrap;
   }
 
   .nav_item a{
@@ -219,5 +223,10 @@ header{
   /*You will want four selectors*/  
 }
 
-/*Your code here again.*/ 
+@media (prefers-reduced-motion){
 /*Add media query to handle reduced-motion*/
+#logo{
+  width: 420px;
+  position: relative;
+  animation: none;
+}
